@@ -1,8 +1,8 @@
 # Big Data - T13 - DeepRec
 ### Flow chart
-![pic10](https://github.com/jeness/BigData_T13_DeepRec/blob/master/screenshots/flowchart1.png)
+![pic10](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/flowchart1.png)
 ### Overview Architecture
-![pic11](https://github.com/jeness/BigData_T13_DeepRec/blob/master/screenshots/arche.png)
+![pic11](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/arche.png)
 ### Dataset
 [Netflix Prize open competition dataset](https://www.kaggle.com/netflix-inc/netflix-prize-data)<br>
 <br>
