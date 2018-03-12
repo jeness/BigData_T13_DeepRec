@@ -26,7 +26,22 @@ python ./data_utils/netflix_data_convert.py training_set Netflix
 ```
 ![picture 1](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/data%20processing.PNG)
 
-![picture 2](https://github.com/jeness/BigData_T13_DeepRec/blob/master/screenshots_data%20processing/datastats.PNG)
+![picture 2](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/datastats.PNG)
 
 After that, the raw data will be converted into 3 columns with a format of <br>
 `CustomerID,MovieID, Rating`
+
+### Model and data test 
+For test the autoencoder model, run the script to test the autoencoder for data and layers
+```
+python -m unittest test/data_layer_tests.py
+```
+![pic3](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/test%20for%20data%20layer.png)
+```
+python -m unittest test/test_model.py
+```
+![5](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/test%20models%202.png)<br>
+![6](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/test%20models%20screen%20shot3.png)
+
+![p7](https://github.com/jeness/BigData_T13_DeepRec/blob/master/screenshots/running.PNG)
+![picture 8](https://github.com/jeness/BigData_T13_DeepRec/blob/master/screenshots_data%20processing/3Mresult.PNG)
