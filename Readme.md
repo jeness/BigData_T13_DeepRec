@@ -19,3 +19,14 @@ tar -xf download/training_set.tar
 ```
 
 We mainly divided movie rating data into three sets: `train set`, `valid set` and `test set`, according to the dates of the ratings. In each set, files have three columns structure: `CustomerID`,`MovieID`,`Rating`.
+
+In the root file folder, run the script below to convert the raw data
+```
+python ./data_utils/netflix_data_convert.py training_set Netflix
+```
+![picture 1](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/data%20processing.PNG)
+
+![picture 2](https://github.com/jeness/BigData_T13_DeepRec/blob/master/screenshots_data%20processing/datastats.PNG)
+
+After that, the raw data will be converted into 3 columns with a format of <br>
+`CustomerID,MovieID, Rating`
