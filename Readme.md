@@ -1,6 +1,6 @@
 # Big Data - T13 - DeepRec
 ### Flow chart
-![pic10](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/flowchart1.png)
+![pic10](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/WechatIMG122.jpeg)
 ### Overview Architecture
 ![pic11](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/arche.png)
 ### Dataset
