@@ -49,3 +49,5 @@ python -m unittest test/test_model.py
 
 ![p7](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/running.PNG)
 ![picture 8](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/3Mresult.PNG)
+### Result
+![finalresult](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/finalresult.png)
