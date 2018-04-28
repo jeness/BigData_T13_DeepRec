@@ -1,6 +1,6 @@
 # Big Data - T13 - DeepRec
 ### Flow chart
-![pic10](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/flowchart1.png)
+![pic10](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/WechatIMG122.jpeg)
 ### Overview Architecture
 ![pic11](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/arche.png)
 ### Dataset
@@ -47,5 +47,5 @@ python -m unittest test/test_model.py
 ![5](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/test%20models%202.png)<br>
 ![6](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/test%20models%20screen%20shot3.png)
 
-![p7](https://github.com/jeness/BigData_T13_DeepRec/blob/master/screenshots/running.PNG)
-![picture 8](https://github.com/jeness/BigData_T13_DeepRec/blob/master/screenshots_data%20processing/3Mresult.PNG)
+![p7](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/running.PNG)
+![picture 8](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/3Mresult.PNG)
