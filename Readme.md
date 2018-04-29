@@ -24,30 +24,22 @@ tar -xf download/training_set.tar
 
 We mainly divided movie rating data into three sets: `train set`, `valid set` and `test set`, according to the dates of the ratings. In each set, files have three columns structure: `CustomerID`,`MovieID`,`Rating`.
 
-In the root file folder, run the script below to convert the raw data
+In the root file folder, run the script below to process the original Netflix dataset and output the basic statistics of number of ratings and users.
 ```
 python ./data_utils/netflix_data_convert.py training_set Netflix
 ```
-![picture 1](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/data%20processing.PNG)
-
 ![picture 2](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/datastats.PNG)
 
 After that, the raw data will be converted into 3 columns with a format of <br>
 `CustomerID,MovieID, Rating`
 
 ### Model and data test 
-For test the autoencoder model, run the script to test the autoencoder for data and layers
+For test the autoencoder model, run the script to test whether the autoencoder for data and layers is working smoothly.
 ```
 python -m unittest test/data_layer_tests.py
 ```
-![pic3](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/test%20for%20data%20layer.png)
 ```
 python -m unittest test/test_model.py
 ```
-![5](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/test%20models%202.png)<br>
-![6](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/test%20models%20screen%20shot3.png)
-
-![p7](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/running.PNG)
-![picture 8](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots_data%20processing/3Mresult.PNG)
 ### Result
 ![finalresult](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/finalresult.png)
