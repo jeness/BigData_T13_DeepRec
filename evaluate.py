@@ -5,6 +5,7 @@ from reco_encoder.data import input_layer
 from reco_encoder.model import model
 from torch.autograd import Variable
 from pathlib import Path
+from math import sqrt
 
 parser = argparse.ArgumentParser(description='RecoEncoder')
 
@@ -94,13 +95,13 @@ def main():
       if i % 10000 == 0:
         print("Done: {}".format(i))
 
-  with open(preds.txt, 'r') as inpt:
+  with open('preds.txt', 'r') as inpt:
     lines = inpt.readlines()
     n = 0
     denom = 0.0
     for line in lines:
       parts = line.split('\t')
-      prediction = float(parts[2]) if not args.round else round(float(parts[2]))
+      prediction = float(parts[2]) 
       rating = float(parts[3])
       denom += (prediction - rating)*(prediction - rating)
       n += 1
