@@ -1,10 +1,10 @@
-# Copyright (c) 2017 NVIDIA Corporation
 from os import listdir, path, makedirs
 import random
 import sys
 import time
 import datetime
 
+#show statistics of netflix dataset
 def print_stats(data):
   total_ratings = 0
   print("STATS")
@@ -75,11 +75,13 @@ def create_NETFLIX_data_timesplit(all_data,
 
 
 def main(args):
-  # create necessary folders:
-  for output_dir in [
+  folder = args[1]
+  out_folder = args[2]
+  # create necessary folders to load processed data:
+  for output_dir in [(out_folder + f) for f in [
     "Netflix/N3M_TRAIN", "Netflix/N3M_VALID", "Netflix/N3M_TEST", "Netflix/N6M_TRAIN",
     "Netflix/N6M_VALID", "Netflix/N6M_TEST", "Netflix/N1Y_TRAIN", "Netflix/N1Y_VALID",
-    "Netflix/N1Y_TEST", "Netflix/NF_TRAIN", "Netflix/NF_VALID", "Netflix/NF_TEST"]:
+    "Netflix/N1Y_TEST", "Netflix/NF_TRAIN", "Netflix/NF_VALID", "Netflix/NF_TEST"]]:
     makedirs(output_dir, exist_ok=True)
 
   user2id_map = dict()
@@ -87,9 +89,6 @@ def main(args):
   userId = 0
   itemId = 0
   all_data = dict()
-
-  folder = args[1]
-  out_folder = args[2]
 
   text_files = [path.join(folder, f)
                 for f in listdir(folder)
@@ -135,7 +134,7 @@ def main(args):
   print_stats(nf_test)
   save_data_to_file(nf_test, out_folder + "/NF_TEST/nf.test.txt")
 
-
+# Netflix 3 months
   (n3m_train, n3m_valid, n3m_test) = create_NETFLIX_data_timesplit(all_data,
                                                                    "2005-09-01",
                                                                    "2005-11-30",
@@ -151,6 +150,7 @@ def main(args):
   print_stats(n3m_test)
   save_data_to_file(n3m_test, out_folder + "/N3M_TEST/n3m.test.txt")
 
+  # Netflix 6 months
   (n6m_train, n6m_valid, n6m_test) = create_NETFLIX_data_timesplit(all_data,
                                                                    "2005-06-01",
                                                                    "2005-11-30",
