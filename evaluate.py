@@ -94,7 +94,7 @@ def main():
       if i % 10000 == 0:
         print("Done: {}".format(i))
 
-with open(preds.txt, 'r') as inpt:
+  with open(preds.txt, 'r') as inpt:
     lines = inpt.readlines()
     n = 0
     denom = 0.0
