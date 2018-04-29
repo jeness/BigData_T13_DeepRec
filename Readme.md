@@ -1,9 +1,9 @@
 # Big Data - T13 - DeepRec
-### Flow chart
+## Flow chart
 ![pic10](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/WechatIMG122.jpeg)
-### Overview Architecture
+## Overview Architecture
 ![pic11](https://github.com/jeness/BigData_T13_DeepRec/raw/master/screenshots/arche.png)
-### Dataset
+## Dataset
 [Netflix Prize open competition dataset](https://www.kaggle.com/netflix-inc/netflix-prize-data)<br>
 <br>
 We mainly used the file `training_set.tar` in the raw dataset. It is a tar of a directory containing 17,770 files, one per movie. The first line of each file contains the movie id followed by a colon. Each subsequent line in the file corresponds to a rating from a customer and its date in the following format:
@@ -33,7 +33,7 @@ python ./data_utils/dataprocessing.py training_set Netflix
 After that, the raw data will be converted into 3 columns with a format of <br>
 `CustomerID,MovieID, Rating`
 
-### Model and data test 
++ **Model and data test 
 For test the autoencoder model, run the script to test whether the autoencoder for data and layers is working smoothly.
 ```
 python -m unittest test/data_layer_tests.py
