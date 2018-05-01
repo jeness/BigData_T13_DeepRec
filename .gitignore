@@ -104,3 +104,7 @@ test/testData_iRec
 test/testData_uRec
 reco_encoder/.DS_Store
 test/.DS_Store
+
+Netflix/
+download/
+training_set/
