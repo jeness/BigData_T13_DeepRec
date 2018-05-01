@@ -108,3 +108,5 @@ test/.DS_Store
 Netflix/
 download/
 training_set/
+model_save/
+preds.txt/
